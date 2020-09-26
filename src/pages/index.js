@@ -1,7 +1,11 @@
-import React from "react"
-import './index.css';
+import React from "react";
+import '../components/index.css';
 import App from '../components/app';
 
-const IndexPage = () => <App />
+function IndexPage() {
+  return (
+    <App />
+  )
+}
 
 export default IndexPage;

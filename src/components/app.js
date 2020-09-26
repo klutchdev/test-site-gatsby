@@ -33,16 +33,16 @@ function Navbar(props) {
   );
 }
 
-function NavItem(props) {
+function NavItem({ icon, children }) {
   const [open, setOpen] = useState(false);
 
   return (
     <li className="nav-item">
       <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
-        {props.icon}
+        { icon }
       </a>
 
-      {open && props.children}
+      {open && children}
     </li>
   );
 }
@@ -61,12 +61,12 @@ function DropdownMenu() {
     setMenuHeight(height);
   }
 
-  function DropdownItem(props) {
+  function DropdownItem({ children, leftIcon, rightIcon }) {
     return (
       <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-        <span className="icon-button">{props.leftIcon}</span>
-        {props.children}
-        <span className="icon-right">{props.rightIcon}</span>
+        <span className="icon-button">{leftIcon}</span>
+        {children}
+        <span className="icon-right">{rightIcon}</span>
       </a>
     );
   }
