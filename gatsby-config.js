@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `test site`,
+    title: `test-site-gatsby`,
     description: `Gatsby and Netify test`,
     author: `@KlutchDev`,
   },
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `test-site`,
+        name: `test-site-gatsby`,
         short_name: `mytest`,
         start_url: `/`,
         background_color: `#663399`,
