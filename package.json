@@ -1,6 +1,6 @@
 {
   "name": "test-site-gatsby",
-  "private": false,
+  "private": true,
   "description": "Test site",
   "version": "0.1.0",
   "dependencies": {
